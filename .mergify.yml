@@ -1,0 +1,18 @@
+pull_request_rules:
+  - name: automatic merge of scala-steward PRs
+    conditions:
+      - head~=^update/
+      - check-success=build
+    actions:
+      delete_head_branch:
+        force: true
+      merge:
+        method: merge
+
+  - name: automatic merge if author is dependabot
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - check-success=build
+    actions:
+      merge:
+        method: merge
