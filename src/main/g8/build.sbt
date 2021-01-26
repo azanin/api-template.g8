@@ -124,6 +124,6 @@ def dockerFile(dependsOn: File) = {
 }
 
 addCommandAlias("integrationTests", ";project tests;docker;it:test")
-addCommandAlias("tests", "project tests;docker;it:test;project core;test")
+addCommandAlias("tests", "project core;test;project tests;docker;it:test")
 addCommandAlias("dockerBuildAndPublish", ";project core;dockerBuildAndPush")
 
