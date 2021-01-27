@@ -6,7 +6,7 @@ val http4sV = "0.21.9"
 
 val catsEffectScalaTestV = "0.4.2"
 
-val tapirV = "0.17.0-M8"
+val tapirV = "0.17.7"
 
 val kindProjectorV = "0.11.0"
 
@@ -25,7 +25,12 @@ inThisBuild(
   List(
     organization := "$organization$",
     developers := List(
-      Developer("$contributorUsername$", "$contributorName$", "$contributorEmail$", url("https://github.com/$contributorUsername$"))
+      Developer(
+        "$contributorUsername$",
+        "$contributorName$",
+        "$contributorEmail$",
+        url("https://github.com/$contributorUsername$")
+      )
     ),
     licenses += ("MIT", url("http://opensource.org/licenses/MIT")),
     pomIncludeRepository := { _ => false }
@@ -92,7 +97,6 @@ lazy val core = project
     publish in docker := Some("Github container registry" at "https://ghcr.io")
   )
 
-
 lazy val tests = project
   .in(file("tests"))
   .settings(name := "$name$-tests")
@@ -126,4 +130,3 @@ def dockerFile(dependsOn: File) = {
 addCommandAlias("integrationTests", ";project tests;docker;it:test")
 addCommandAlias("tests", "project core;test;project tests;docker;it:test")
 addCommandAlias("dockerBuildAndPublish", ";project core;dockerBuildAndPush")
-
