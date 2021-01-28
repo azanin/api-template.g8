@@ -2,7 +2,7 @@
 
 Type `sbt new azanin/api-template.g8`
 
-##Features
+## Features
 
 This template configures a health check endpoint with:
 - Tapir
