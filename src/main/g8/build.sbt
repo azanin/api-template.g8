@@ -44,18 +44,17 @@ lazy val commonSettings = Seq(
   addCompilerPlugin("org.typelevel" %% "kind-projector"     % kindProjectorV cross CrossVersion.full),
   addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % betterMonadicForV),
   libraryDependencies ++= Seq(
-    "org.typelevel"               %% "cats-effect"                    % catsV,
-    "org.http4s"                  %% "http4s-dsl"                     % http4sV,
-    "org.http4s"                  %% "http4s-blaze-server"            % http4sV,
-    "com.softwaremill.sttp.tapir" %% "tapir-core"                     % tapirV,
-    "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"            % tapirV,
-    "com.softwaremill.sttp.tapir" %% "tapir-json-circe"               % tapirV,
-    "io.circe"                    %% "circe-generic"                  % circeV,
-    "ch.qos.logback"               % "logback-classic"                % logbackVersion % Runtime,
-    "com.codecommit"              %% "cats-effect-testing-scalatest"  % catsEffectScalaTestV,
-    "com.dimafeng"                %% "testcontainers-scala-scalatest" % testContainerV,
-    "org.http4s"                  %% "http4s-blaze-client"            % http4sV,
-    "org.http4s"                  %% "http4s-circe"                   % http4sV
+    "org.typelevel"               %% "cats-effect"                   % catsV,
+    "org.http4s"                  %% "http4s-dsl"                    % http4sV,
+    "org.http4s"                  %% "http4s-blaze-server"           % http4sV,
+    "com.softwaremill.sttp.tapir" %% "tapir-core"                    % tapirV,
+    "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"           % tapirV,
+    "com.softwaremill.sttp.tapir" %% "tapir-json-circe"              % tapirV,
+    "io.circe"                    %% "circe-generic"                 % circeV,
+    "ch.qos.logback"               % "logback-classic"               % logbackVersion % Runtime,
+    "com.codecommit"              %% "cats-effect-testing-scalatest" % catsEffectScalaTestV,
+    "org.http4s"                  %% "http4s-blaze-client"           % http4sV,
+    "org.http4s"                  %% "http4s-circe"                  % http4sV
   )
 )
 
@@ -103,6 +102,11 @@ lazy val tests = project
   .configs(IntegrationTest)
   .settings(Defaults.itSettings)
   .settings(commonSettings)
+  .settings(
+    libraryDependencies ++= Seq(
+      "com.dimafeng" %% "testcontainers-scala-scalatest" % testContainerV
+    )
+  )
   .settings(parallelExecution in IntegrationTest := false)
   .enablePlugins(NoPublishPlugin)
   .settings(fork in IntegrationTest := true)
