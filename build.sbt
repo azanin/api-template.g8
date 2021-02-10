@@ -5,7 +5,7 @@ lazy val root = (project in file("."))
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
-    addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.0" cross CrossVersion.full),
+    addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.3" cross CrossVersion.full),
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
     libraryDependencies ++= Seq(
       "org.typelevel"               %% "cats-effect"                    % "2.3.3",
