@@ -8,9 +8,9 @@ lazy val root = (project in file("."))
     addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.0" cross CrossVersion.full),
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
     libraryDependencies ++= Seq(
-      "org.typelevel"               %% "cats-effect"                    % "2.2.0",
-      "org.http4s"                  %% "http4s-dsl"                     % "0.21.18",
-      "org.http4s"                  %% "http4s-blaze-server"            % "0.21.18",
+      "org.typelevel"               %% "cats-effect"                    % "2.3.1",
+      "org.http4s"                  %% "http4s-dsl"                     % "0.21.9",
+      "org.http4s"                  %% "http4s-blaze-server"            % "0.21.9",
       "com.softwaremill.sttp.tapir" %% "tapir-core"                     % "0.17.7",
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"            % "0.17.7",
       "com.softwaremill.sttp.tapir" %% "tapir-json-circe"               % "0.17.7",
@@ -20,9 +20,9 @@ lazy val root = (project in file("."))
       "io.circe"                    %% "circe-generic"                  % "0.13.0",
       "ch.qos.logback"               % "logback-classic"                % "1.2.3" % Runtime,
       "com.codecommit"              %% "cats-effect-testing-scalatest"  % "0.4.2",
-      "org.http4s"                  %% "http4s-blaze-client"            % "0.21.18",
-      "org.http4s"                  %% "http4s-circe"                   % "0.21.18",
-      "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.38.9"
+      "org.http4s"                  %% "http4s-blaze-client"            % "0.21.9",
+      "org.http4s"                  %% "http4s-circe"                   % "0.21.9",
+      "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.39.0"
     ),
     scriptedLaunchOpts ++= List(
       "-Xms1024m",
