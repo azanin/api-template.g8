@@ -22,7 +22,7 @@ lazy val root = (project in file("."))
       "com.codecommit"              %% "cats-effect-testing-scalatest"  % "0.5.1",
       "org.http4s"                  %% "http4s-blaze-client"            % "0.21.19",
       "org.http4s"                  %% "http4s-circe"                   % "0.21.19",
-      "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.39.0"
+      "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.39.3"
     ),
     scriptedLaunchOpts ++= List(
       "-Xms1024m",
