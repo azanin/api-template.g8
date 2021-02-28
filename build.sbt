@@ -19,7 +19,7 @@ lazy val root = (project in file("."))
       "com.softwaremill.sttp.tapir" %% "tapir-swagger-ui-http4s"        % "0.17.10",
       "io.circe"                    %% "circe-generic"                  % "0.13.0",
       "ch.qos.logback"               % "logback-classic"                % "1.2.3" % Runtime,
-      "com.codecommit"              %% "cats-effect-testing-scalatest"  % "0.5.1",
+      "com.codecommit"              %% "cats-effect-testing-scalatest"  % "0.5.2",
       "org.http4s"                  %% "http4s-blaze-client"            % "0.21.19",
       "org.http4s"                  %% "http4s-circe"                   % "0.21.19",
       "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.39.0"
