@@ -22,7 +22,7 @@ lazy val commonSettings = Seq(
   addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.0" cross CrossVersion.full),
   addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
   libraryDependencies ++= Seq(
-    "org.typelevel"               %% "cats-effect"                   % "2.3.1",
+    "org.typelevel"               %% "cats-effect"                   % "2.3.3",
     "org.http4s"                  %% "http4s-dsl"                    % "0.21.19",
     "org.http4s"                  %% "http4s-blaze-server"           % "0.21.19",
     "com.softwaremill.sttp.tapir" %% "tapir-core"                    % "0.17.13",
