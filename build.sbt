@@ -9,8 +9,8 @@ lazy val root = (project in file("."))
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
     libraryDependencies ++= Seq(
       "org.typelevel"               %% "cats-effect"                    % "2.3.3",
-      "org.http4s"                  %% "http4s-dsl"                     % "0.21.19",
-      "org.http4s"                  %% "http4s-blaze-server"            % "0.21.19",
+      "org.http4s"                  %% "http4s-dsl"                     % "0.21.20",
+      "org.http4s"                  %% "http4s-blaze-server"            % "0.21.20",
       "com.softwaremill.sttp.tapir" %% "tapir-core"                     % "0.17.19",
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"            % "0.17.19",
       "com.softwaremill.sttp.tapir" %% "tapir-json-circe"               % "0.17.19",
