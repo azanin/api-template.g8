@@ -19,7 +19,7 @@ inThisBuild(
 lazy val commonSettings = Seq(
   scalaVersion := "$scala_version$",
   scalafmtOnCompile := true,
-  addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.3" cross CrossVersion.full),
+  addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.0" cross CrossVersion.full),
   addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
   libraryDependencies ++= Seq(
     "org.typelevel"               %% "cats-effect"                   % "2.5.0",
