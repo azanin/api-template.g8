@@ -31,7 +31,7 @@ lazy val commonSettings = Seq(
     "com.softwaremill.sttp.tapir" %% "tapir-openapi-docs"            % "0.17.19",
     "com.softwaremill.sttp.tapir" %% "tapir-openapi-circe-yaml"      % "0.17.19",
     "com.softwaremill.sttp.tapir" %% "tapir-swagger-ui-http4s"       % "0.17.19",
-    "io.circe"                    %% "circe-generic"                 % "0.13.0",
+    "io.circe"                    %% "circe-generic"                 % "0.14.1",
     "ch.qos.logback"               % "logback-classic"               % "1.2.3" % Runtime,
     "com.codecommit"              %% "cats-effect-testing-scalatest" % "0.5.4",
     "org.http4s"                  %% "http4s-blaze-client"           % "0.21.23",
