@@ -34,8 +34,8 @@ lazy val commonSettings = Seq(
     "io.circe"                    %% "circe-generic"                 % "0.14.1",
     "ch.qos.logback"               % "logback-classic"               % "1.2.3" % Runtime,
     "com.codecommit"              %% "cats-effect-testing-scalatest" % "0.5.4",
-    "org.http4s"                  %% "http4s-blaze-client"           % "0.21.23",
-    "org.http4s"                  %% "http4s-circe"                  % "0.21.23"
+    "org.http4s"                  %% "http4s-blaze-client"           % "0.21.24",
+    "org.http4s"                  %% "http4s-circe"                  % "0.21.24"
   )
 )
 
