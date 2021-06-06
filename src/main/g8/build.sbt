@@ -23,8 +23,8 @@ lazy val commonSettings = Seq(
   addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
   libraryDependencies ++= Seq(
     "org.typelevel"               %% "cats-effect"                   % "2.5.1",
-    "org.http4s"                  %% "http4s-dsl"                    % "0.21.23",
-    "org.http4s"                  %% "http4s-blaze-server"           % "0.21.23",
+    "org.http4s"                  %% "http4s-dsl"                    % "0.21.24",
+    "org.http4s"                  %% "http4s-blaze-server"           % "0.21.24",
     "com.softwaremill.sttp.tapir" %% "tapir-core"                    % "0.17.19",
     "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"           % "0.17.19",
     "com.softwaremill.sttp.tapir" %% "tapir-json-circe"              % "0.17.19",
@@ -34,8 +34,8 @@ lazy val commonSettings = Seq(
     "io.circe"                    %% "circe-generic"                 % "0.14.1",
     "ch.qos.logback"               % "logback-classic"               % "1.2.3" % Runtime,
     "com.codecommit"              %% "cats-effect-testing-scalatest" % "0.5.4",
-    "org.http4s"                  %% "http4s-blaze-client"           % "0.21.23",
-    "org.http4s"                  %% "http4s-circe"                  % "0.21.23"
+    "org.http4s"                  %% "http4s-blaze-client"           % "0.21.24",
+    "org.http4s"                  %% "http4s-circe"                  % "0.21.24"
   )
 )
 
