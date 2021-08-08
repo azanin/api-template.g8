@@ -9,8 +9,8 @@ lazy val root = (project in file("."))
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
     libraryDependencies ++= Seq(
       "org.typelevel"               %% "cats-effect"                    % "2.5.2",
-      "org.http4s"                  %% "http4s-dsl"                     % "0.21.25",
-      "org.http4s"                  %% "http4s-blaze-server"            % "0.21.25",
+      "org.http4s"                  %% "http4s-dsl"                     % "0.23.1",
+      "org.http4s"                  %% "http4s-blaze-server"            % "0.23.1",
       "com.softwaremill.sttp.tapir" %% "tapir-core"                     % "0.17.20",
       "com.softwaremill.sttp.tapir" %% "tapir-http4s-server"            % "0.17.20",
       "com.softwaremill.sttp.tapir" %% "tapir-json-circe"               % "0.17.20",
@@ -20,8 +20,8 @@ lazy val root = (project in file("."))
       "io.circe"                    %% "circe-generic"                  % "0.14.1",
       "ch.qos.logback"               % "logback-classic"                % "1.2.5" % Runtime,
       "com.codecommit"              %% "cats-effect-testing-scalatest"  % "0.5.4",
-      "org.http4s"                  %% "http4s-blaze-client"            % "0.21.25",
-      "org.http4s"                  %% "http4s-circe"                   % "0.21.25",
+      "org.http4s"                  %% "http4s-blaze-client"            % "0.23.1",
+      "org.http4s"                  %% "http4s-circe"                   % "0.23.1",
       "com.dimafeng"                %% "testcontainers-scala-scalatest" % "0.39.5"
     ),
     scriptedLaunchOpts ++= List(
