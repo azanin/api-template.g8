@@ -85,7 +85,7 @@ lazy val tests = project
   .settings(commonSettings)
   .settings(
     libraryDependencies ++= Seq(
-      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.39.6"
+      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.39.7"
     )
   )
   .settings(parallelExecution in IntegrationTest := false)
