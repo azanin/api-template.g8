@@ -31,8 +31,8 @@ lazy val commonSettings = Seq(
     "com.softwaremill.sttp.tapir" %% "tapir-openapi-docs"            % "0.17.20",
     "com.softwaremill.sttp.tapir" %% "tapir-openapi-circe-yaml"      % "0.17.20",
     "com.softwaremill.sttp.tapir" %% "tapir-swagger-ui-http4s"       % "0.17.20",
-    "io.circe"                    %% "circe-generic"                 % "0.14.5",
-    "ch.qos.logback"               % "logback-classic"               % "1.2.11" % Runtime,
+    "io.circe"                    %% "circe-generic"                 % "0.14.2",
+    "ch.qos.logback"               % "logback-classic"               % "1.2.12" % Runtime,
     "com.codecommit"              %% "cats-effect-testing-scalatest" % "0.5.4",
     "org.http4s"                  %% "http4s-blaze-client"           % "0.21.34",
     "org.http4s"                  %% "http4s-circe"                  % "0.21.34"
@@ -85,7 +85,7 @@ lazy val tests = project
   .settings(commonSettings)
   .settings(
     libraryDependencies ++= Seq(
-      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.40.12"
+      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.40.14"
     )
   )
   .settings(parallelExecution in IntegrationTest := false)
