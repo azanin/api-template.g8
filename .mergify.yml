@@ -4,8 +4,6 @@ pull_request_rules:
       - head~=^update/
       - check-success=build
     actions:
-      delete_head_branch:
-        force: true
       merge:
         method: merge
 
