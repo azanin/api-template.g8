@@ -1,3 +1,5 @@
+
+
 # My Giter 8 Template to build APIs
 
 Type `sbt new azanin/api-template.g8`
@@ -13,6 +15,6 @@ This template configures a health check endpoint with:
 - Publish Docker images in Github container registry
 - Scala Steward + Mergify configuration
 
-Remember to configure STEWARD and GHRC secret to publishing images. 
+Remember to configure the `STEWARD_TOKEN` and `CR_TOKEN` secrets in your repository settings.
 
-The reference here: https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images 
+The reference here: https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images
